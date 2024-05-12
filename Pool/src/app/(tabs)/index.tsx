@@ -10,12 +10,10 @@ import SplashScreen from '@/src/Screens/splashScreen';
 
 export default function HomeScreen() {
   return (
-    <ScrollView>
+    
       <SplashScreen />
-      <View>
-        <Text>Hello, world!</Text>
-      </View>
-    </ScrollView>
+      
+    
   );
 }
 

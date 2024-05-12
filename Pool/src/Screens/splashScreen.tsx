@@ -1,11 +1,12 @@
 import React from 'react'
 import { StyleSheet, View, Image, Text } from 'react-native'
 
+
 const SplashScreen = () => {
     return (
       <View style={styles.container}>
-        <Text>Zahid</Text>
-        <Image />
+        
+        <Image source={require('../../assets/images/Logor.jpg')} style={styles.image}/>
       </View>
     );
   };
@@ -15,8 +16,15 @@ const SplashScreen = () => {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: 'white', // Set your desired background color
+      backgroundColor: 'black', // Set your desired background color
     },
+
+    image: {
+      width: 100,
+      height: 100,
+      resizeMode: "cover",
+      
+    }
   });
   
   export default SplashScreen;
