@@ -1,21 +1,34 @@
 import { StyleSheet } from "react-native";
 
 const styleDes = StyleSheet.create({
+    InvincibleCont:{
+        borderRadius: 25,
+        padding: 20,
+        borderWidth: 2,
+        borderColor: 'white',
+        margin: 20, 
+        marginTop: 30,
+        position: 'relative',
+        height: 450
+    },
 
-    Container:{
+Container:{
         borderRadius: 25,
         padding: 20,
         borderWidth: 2,
         borderColor: '#7B18E3',
-        margin: 20, 
-        marginTop: 30,
-        position: 'relative' 
+        margin: 10, 
+        marginTop: -20,
+        position: 'relative',
+        height: 150
         
 },
 
+
+
 divider: {
     borderBottomWidth: 1,
-    borderBottomColor: '£696969',
+    borderBottomColor: '#696969',
     marginVertical: 10,
     
 },
@@ -23,7 +36,8 @@ divider: {
 InputText:{
 
     marginLeft: 50,
-    marginBottom: 10
+    marginBottom: 10,
+    height: 500,
 
 },
 iconArrow:{
@@ -35,7 +49,13 @@ iconArrow:{
 },
 icon:{
 
-}
+},
+
+iconSearch:{
+flexDirection: 'column',
+margin: 20,
+
+},
 
 
 

@@ -3,7 +3,7 @@ import { View, TextInput, Text, TouchableOpacity } from 'react-native'
 import styleDes from './styleDes'
 import { useState } from 'react'
 import { Feather } from '@expo/vector-icons'
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
+import { GooglePlaceData, GooglePlaceDetail, GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 
 const DestinationSearch = () => {
 
@@ -24,38 +24,37 @@ const DestinationSearch = () => {
 
 
     return (
+        <View style={styleDes.InvincibleCont}>
         <View style={styleDes.Container}>
             <GooglePlacesAutocomplete
                 placeholder='From'
-                onPress={(data, details = null) => {
-                    // 'details' is provided when fetchDetails = true
-                    console.log(data, details);
+                onPress={(data: GooglePlaceData, details: GooglePlaceDetail | null = null) => {
+                    setOrigin(data.description);
                 }}
                 query={{
-                    key: 'YOUR_GOOGLE_API_KEY',
+                    key: 'Google API Key',
                     language: 'en',
                 }}
                 styles={{
-                    container: styleDes.InputText, // Apply your TextInput styles here
-                    textInput: { flex: 1 }, // Adjust as needed
+                    container: styleDes.InputText,
+                    textInput: {  height: 40, fontSize: 16 },
                 }}
             />
-            
+
             <View style={styleDes.divider}></View>
-            
+
             <GooglePlacesAutocomplete
                 placeholder='Where to?'
-                onPress={(data, details = null) => {
-                    // 'details' is provided when fetchDetails = true
-                    console.log(data, details);
+                onPress={(data: GooglePlaceData, details: GooglePlaceDetail | null = null) => {
+                    setDestination(data.description);
                 }}
                 query={{
-                    key: 'YOUR_GOOGLE_API_KEY',
+                    key: 'Google API Key',
                     language: 'en',
                 }}
                 styles={{
-                    container: styleDes.InputText, // Apply your TextInput styles here
-                    textInput: { flex: 1 }, // Adjust as needed
+                    container: styleDes.InputText,
+                    textInput: {  height: 40, fontSize: 16 },
                 }}
             />
 
@@ -66,6 +65,13 @@ const DestinationSearch = () => {
                 {/* Render your search button here */}
             </TouchableOpacity>
         </View>
+
+        <Feather name="search" size={24} color="#374249" style={styleDes.iconSearch} />
+        <Feather name="search" size={24} color="#374249" style={styleDes.iconSearch} />
+        <Feather name="search" size={24} color="#374249" style={styleDes.iconSearch} />
+    </View>
+
+        
     );
 };
 

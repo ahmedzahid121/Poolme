@@ -34,8 +34,8 @@ const HomeSearch = () => {
                             <Text style={styleSearch.inputText}>Search</Text>
                         </TouchableOpacity>
 
-                    </>
-                )}
+                    
+                
                     <Text style={styleSearch.favourite}>Favorite</Text>
 
                     <View style={styleSearch.FavContainer}>
@@ -76,7 +76,8 @@ const HomeSearch = () => {
                             </View>
                         </View>
                     </View>
-                
+                </>
+            )}
             
         </View>
   )
