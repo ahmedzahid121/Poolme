@@ -37,6 +37,27 @@ const HomeSearch = () => {
               </View>
             </View>
         </View>
+
+
+
+        
+             <Text style={styles.favourite}>Recents</Text>
+        <View style={styles.RecContainer}>
+            <View style={styles.RecentLogo}>
+                <View style={styles.logoItem}>
+                    <Feather name="map-pin" size={24} color="#374249" style={styles.icon} />
+                    <Text>Auckland CBD</Text>
+                </View>
+                <View style={styles.logoItem}>
+                    <Feather name="map-pin" size={24} color="#374249" style={styles.icon} />
+                    <Text>Britomart</Text>
+                </View>
+                <View style={styles.logoItem}>
+                    <Feather name="map-pin" size={24} color="#374249" style={styles.icon} />
+                    <Text>Spark Arena</Text>
+                </View>
+            </View>
+        </View>
     </View>
   )
 }
@@ -88,14 +109,35 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
-    favourite:{
+    favourite: {
         color: '#696969',
         fontWeight: 'bold',
-        margin: 2,
+        margin: 1.5,
         marginLeft: 30,
         marginTop: 10,
         marginBottom: -10
-    }
+    },
+    RecContainer: {
+        borderRadius: 25,
+        padding: 20,
+        borderWidth: 1.5,
+        borderColor: '#7B18E3',
+        margin: 20,
+    },
+    RecentLogo: {
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        marginBottom: 20,
+    },
+    logoItem: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom: 10, // Adjust this value to control the space underneath each logo and text
+    },
+    icon: {
+        marginRight: 5, // Adjust this value to control the space between the icon and text
+    },
+
   
 
   
