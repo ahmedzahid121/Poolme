@@ -3,6 +3,7 @@ import { View, TextInput, Text, TouchableOpacity } from 'react-native'
 import styleDes from './styleDes'
 import { useState } from 'react'
 import { Feather } from '@expo/vector-icons'
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 
 const DestinationSearch = () => {
 
@@ -24,29 +25,45 @@ const DestinationSearch = () => {
 
     return (
         <View style={styleDes.Container}>
-            <TextInput
-                style={styleDes.InputText}
-                placeholder="From"
-                onChangeText={handleDestinationChange}
-                value={destination}
-
-                
+            <GooglePlacesAutocomplete
+                placeholder='From'
+                onPress={(data, details = null) => {
+                    // 'details' is provided when fetchDetails = true
+                    console.log(data, details);
+                }}
+                query={{
+                    key: 'YOUR_GOOGLE_API_KEY',
+                    language: 'en',
+                }}
+                styles={{
+                    container: styleDes.InputText, // Apply your TextInput styles here
+                    textInput: { flex: 1 }, // Adjust as needed
+                }}
             />
             
-            
-
             <View style={styleDes.divider}></View>
-            <TextInput
-                style={styleDes.InputText}
-                placeholder="Where to?"
-                onChangeText={handleDestinationChange}
-                value={origin}
+            
+            <GooglePlacesAutocomplete
+                placeholder='Where to?'
+                onPress={(data, details = null) => {
+                    // 'details' is provided when fetchDetails = true
+                    console.log(data, details);
+                }}
+                query={{
+                    key: 'YOUR_GOOGLE_API_KEY',
+                    language: 'en',
+                }}
+                styles={{
+                    container: styleDes.InputText, // Apply your TextInput styles here
+                    textInput: { flex: 1 }, // Adjust as needed
+                }}
             />
 
             <Feather name="navigation" size={24} color="#374249" style={styleDes.iconArrow} />
             <Feather name="map-pin" size={24} color="#374249" style={styleDes.icon} />
+
             <TouchableOpacity onPress={handleSearch}>
-                
+                {/* Render your search button here */}
             </TouchableOpacity>
         </View>
     );
