@@ -4,6 +4,8 @@ import StyleRow from './Rowstyle';
 import { Feather } from '@expo/vector-icons';
 
 const CarpoolRow = () => {
+
+    
     return (
       <View style={StyleRow.Container}>
         <View style={StyleRow.Sedan}>
@@ -53,3 +55,4 @@ const CarpoolRow = () => {
   
   export default CarpoolRow;
 
+// further Down the line we have to render each of these Veiws to be connected to real life available cars

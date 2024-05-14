@@ -8,13 +8,17 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyCwk9ijPDzBuSVOeD9CUS3dG41U5OTuTIs"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "",
         "backgroundColor": "#ffffff"
-      }
+      } 
+      
     },
     "web": {
       "bundler": "metro",
@@ -29,3 +33,4 @@
     }
   }
 }
+

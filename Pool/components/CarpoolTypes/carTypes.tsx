@@ -7,9 +7,9 @@ const carTypes = () => {
   return (
     
     <View>
-        <Text>Car Types</Text>
+         <CarpoolRow/> 
 
-        <CarpoolRow/>
+        
     </View>
   )
 }
