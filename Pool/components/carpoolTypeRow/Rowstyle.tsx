@@ -14,7 +14,11 @@ const StyleRow = StyleSheet.create({
   },
   Sedan: {
     flexDirection: 'column',
-    marginTop: -20, 
+    marginTop: -5, 
+    padding: 20,
+    borderWidth: 2,
+    borderColor: '#7B18E3',
+    borderRadius: 25,
     
   },
   Van: {
@@ -43,9 +47,22 @@ const StyleRow = StyleSheet.create({
   },
   Text: {
     marginTop: 5,
-    marginBottom: 5 // Add some margin for separation
+    marginBottom: 5, 
+    fontWeight: "bold",
+    color: '#696969'
      
   },
+
+  divider:{
+    borderBottomWidth: 1,
+    borderBottomColor: '#7B18E3',
+    marginVertical: 10,
+  },
+
+  TextTime:{
+    color: '#696969'
+
+  }
 });
 
 export default StyleRow;

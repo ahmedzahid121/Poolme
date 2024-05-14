@@ -8,39 +8,43 @@ const CarpoolRow = () => {
       <View style={StyleRow.Container}>
         <View style={StyleRow.Sedan}>
           <Image style={StyleRow.image} source={require('../../assets/images/Cars/Sedan.png')} />
-          <View style={StyleRow.Price}><Text>Price</Text></View>
-          <Text style={StyleRow.Text}>Location</Text>
-          <Text style={StyleRow.Text}>Time</Text>
+          <View style={StyleRow.Price}><Text>NZ$30.81</Text></View>
+          <Text style={StyleRow.Text}>Preston Road - Britomart Place</Text>
+          <Text style={StyleRow.TextTime}>8 min away</Text>
           <View style={{ flexDirection: 'row' }}>
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
           </View>
         </View>
+
+        
   
         <View style={StyleRow.Van}>
           <Image style={StyleRow.image} source={require('../../assets/images/Cars/Van.png')} />
-          <View style={StyleRow.Price}><Text>Price</Text></View>
-          <Text style={StyleRow.Text}>Location</Text>
-          <Text style={StyleRow.Text}>Time</Text>
+          <View style={StyleRow.Price}><Text>NZ$40.61</Text></View>
+          <Text style={StyleRow.Text}>Ormistan - Auckland CBD</Text>
+          <Text style={StyleRow.TextTime}>. 5 min away</Text>
           <View style={{ flexDirection: 'row' }}>
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
           </View>
         </View>
+
+        <View style={StyleRow.divider}></View>
   
         <View style={StyleRow.SUV}>
           <Image style={StyleRow.image} source={require('../../assets/images/Cars/SUV.png')} />
-          <View style={StyleRow.Price}><Text>Price</Text></View>
-          <Text style={StyleRow.Text}>Location</Text>
-          <Text style={StyleRow.Text}>Time</Text>
+          <View style={StyleRow.Price}><Text>NZ$20.41</Text></View>
+          <Text style={StyleRow.Text}>Albany - Takapuna</Text>
+          <Text style={StyleRow.TextTime}>12 min away</Text>
           <View style={{ flexDirection: 'row' }}>
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
-            <Feather name="user" size={24} color="#374249" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
+            <Feather name="user" size={24} color="#7B18E3" style={StyleRow.iconUser} />
           </View>
         </View>
       </View>
