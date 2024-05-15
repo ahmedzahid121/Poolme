@@ -5,7 +5,7 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { ScrollView } from 'react-native-gesture-handler';
-import HomeScreen from '@/src/Screens/HomeScreen/Home';
+import ResultSearch from '@/src/Screens/Result/resultSearch';
 
 
 
@@ -15,7 +15,7 @@ export default function app() {
   return (
     
     <>
-      <HomeScreen/>
+      <ResultSearch/>
     </>
    
    

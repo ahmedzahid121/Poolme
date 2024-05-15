@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View, Dimensions } from 'react-native';
-import Map from '@/components/HomeMap/Map';
+import RouteMap from '@/assets/RouteMap/RouteMap';
 import CarTypes from '@/components/CarpoolTypes/carTypes';
 
 const resultSearch = () => {
@@ -8,7 +8,7 @@ const resultSearch = () => {
     <View style={{display:'flex'}}>
 
       <View style={{height: Dimensions.get('window').height- 600}}>
-        <Map/>
+        <RouteMap/>
       </View>
 
       <View style={{height:600, backgroundColor: '#C0B9F7', width:'100%'}}>
