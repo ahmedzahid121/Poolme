@@ -12,7 +12,7 @@ const HomeMap = () => {
   };
 
   return (
-    <View style={{ height: 300, backgroundColor: "#a0abff", justifyContent: 'center', alignItems: 'center' }}>
+    <View >
       <MapView style={styles.map}
        
         initialRegion={initialRegion}/>
@@ -33,3 +33,5 @@ const styles = StyleSheet.create({
 });
 
 export default HomeMap
+
+//style={{ height: 300, backgroundColor: "#a0abff", justifyContent: 'center', alignItems: 'center' }}

@@ -6,7 +6,7 @@ const StyleRow = StyleSheet.create({
     padding: 20,
     borderWidth: 2,
     borderColor: 'white',
-    margin: 10,
+    margin: 0,
     marginTop: -30,
     backgroundColor: 'white',
     flexDirection: 'column',

@@ -8,6 +8,7 @@ const styleSearch = StyleSheet.create({
         margin: 0,
         borderRadius: 25,
         height: 900,
+        marginTop: -30,
 
     },
  

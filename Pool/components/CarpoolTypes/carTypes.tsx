@@ -6,7 +6,7 @@ import CarpoolRow from '../carpoolTypeRow/CarpoolRow'
 const carTypes = () => {
   return (
     
-    <View>
+    <View >
          <CarpoolRow/> 
 
         
