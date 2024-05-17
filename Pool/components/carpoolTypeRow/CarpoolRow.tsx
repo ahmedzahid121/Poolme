@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, Image } from 'react-native'
 import StyleRow from './Rowstyle';
 import { Feather } from '@expo/vector-icons';
+import { FlatList } from 'react-native-reanimated/lib/typescript/Animated';
 
 const CarpoolRow = () => {
 
@@ -50,6 +51,8 @@ const CarpoolRow = () => {
           </View>
         </View>
       </View>
+
+      
     );
   }
   

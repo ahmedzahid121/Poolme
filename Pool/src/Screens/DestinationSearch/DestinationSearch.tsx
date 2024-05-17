@@ -26,37 +26,44 @@ const DestinationSearch = () => {
     return (
         <View style={styleDes.InvincibleCont}>
         <View style={styleDes.Container}>
-            <GooglePlacesAutocomplete
-                placeholder='From'
-                onPress={(data: GooglePlaceData, details: GooglePlaceDetail | null = null) => {
-                    setOrigin(data.description);
-                }}
-                query={{
-                    key: 'Google API Key',
-                    language: 'en',
-                }}
-                styles={{
-                    container: styleDes.InputText,
-                    textInput: {  height: 40, fontSize: 16 },
-                }}
-            />
+
+            <View>
+                <GooglePlacesAutocomplete
+                    placeholder='From'
+                    onPress={(data: GooglePlaceData, details: GooglePlaceDetail | null = null) => {
+                        setOrigin(data.description);
+                    }}
+                    query={{
+                        key: 'Google API Key',
+                        language: 'en',
+                    }}
+                    styles={{
+                        container: styleDes.InputText,
+                        textInput: {  height: 40, fontSize: 16 },
+                        
+                    }}
+                />
+            </View>
 
             <View style={styleDes.divider}></View>
+            
+            <View>
+                <GooglePlacesAutocomplete
+                    placeholder='Where to?'
+                    onPress={(data: GooglePlaceData, details: GooglePlaceDetail | null = null) => {
+                        setDestination(data.description);
+                    }}
+                    query={{
+                        key: 'Google API Key',
+                        language: 'en',
+                    }}
+                    styles={{
+                        container: styleDes.InputText,
+                        textInput: {  height: 40, fontSize: 16 },
+                    }}
+                />
 
-            <GooglePlacesAutocomplete
-                placeholder='Where to?'
-                onPress={(data: GooglePlaceData, details: GooglePlaceDetail | null = null) => {
-                    setDestination(data.description);
-                }}
-                query={{
-                    key: 'Google API Key',
-                    language: 'en',
-                }}
-                styles={{
-                    container: styleDes.InputText,
-                    textInput: {  height: 40, fontSize: 16 },
-                }}
-            />
+            </View>
 
             <Feather name="navigation" size={24} color="#374249" style={styleDes.iconArrow} />
             <Feather name="map-pin" size={24} color="#374249" style={styleDes.icon} />

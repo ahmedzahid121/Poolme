@@ -13,7 +13,7 @@ const styleDes = StyleSheet.create({
     },
 
 Container:{
-        borderRadius: 25,
+        borderRadius: 35,
         padding: 20,
         borderWidth: 2,
         borderColor: '#7B18E3',
@@ -21,6 +21,7 @@ Container:{
         marginTop: -20,
         position: 'relative',
         height: 150
+
         
 },
 
@@ -42,8 +43,8 @@ InputText:{
 },
 iconArrow:{
     
-    position: 'absolute', // Position the icon absolutely
-    top: 15, // Align the icon to the top of the container
+    position: 'absolute', 
+    top: 15, 
     left: 18,  
 
 },
