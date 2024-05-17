@@ -17,10 +17,11 @@ Container:{
         padding: 20,
         borderWidth: 2,
         borderColor: '#7B18E3',
-        margin: 10, 
+        margin: 1, 
         marginTop: -20,
         position: 'relative',
-        height: 150
+        height: 150,
+        width: 350
 
         
 },
@@ -52,9 +53,34 @@ icon:{
 
 },
 
+seperator:{
+    backgroundColor: '#7B18E3',
+    height: 1,
+},
+
 iconSearch:{
 flexDirection: 'column',
 margin: 20,
+right: 30,
+top: 4
+
+},
+
+row:{
+flexDirection: 'row',
+alignItems: 'center',
+marginVertical: 10,
+},
+
+iconContainer:{
+    backgroundColor: 'white',
+    padding: 5,
+    borderRadius: 50,
+    marginRight: 15,
+
+},
+
+locationText:{
 
 },
 

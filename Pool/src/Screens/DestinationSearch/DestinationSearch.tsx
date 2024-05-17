@@ -4,6 +4,7 @@ import styleDes from './styleDes'
 import { useState } from 'react'
 import { Feather } from '@expo/vector-icons'
 import { GooglePlaceData, GooglePlaceDetail, GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
+import PlaceRow from './placeRow'
 
 const DestinationSearch = () => {
 
@@ -27,43 +28,62 @@ const DestinationSearch = () => {
         <View style={styleDes.InvincibleCont}>
         <View style={styleDes.Container}>
 
-            <View>
+            
                 <GooglePlacesAutocomplete
                     placeholder='From'
                     onPress={(data: GooglePlaceData, details: GooglePlaceDetail | null = null) => {
                         setOrigin(data.description);
                     }}
                     query={{
-                        key: 'Google API Key',
+                        key: 'AIzaSyCwk9ijPDzBuSVOeD9CUS3dG41U5OTuTIs',
                         language: 'en',
                     }}
                     styles={{
                         container: styleDes.InputText,
                         textInput: {  height: 40, fontSize: 16 },
-                        
+                        listView:{
+                            position: 'absolute',
+                            top: 150,
+                            width: 300,
+                            right: 5
+                        },
+
+                        separator: styleDes.seperator
                     }}
+
+                    renderRow={(data: GooglePlaceData) => <PlaceRow data={data} />}
                 />
-            </View>
+            
 
             <View style={styleDes.divider}></View>
+
             
-            <View>
                 <GooglePlacesAutocomplete
                     placeholder='Where to?'
                     onPress={(data: GooglePlaceData, details: GooglePlaceDetail | null = null) => {
                         setDestination(data.description);
                     }}
                     query={{
-                        key: 'Google API Key',
+                        key: 'AIzaSyCwk9ijPDzBuSVOeD9CUS3dG41U5OTuTIs',
                         language: 'en',
                     }}
                     styles={{
                         container: styleDes.InputText,
                         textInput: {  height: 40, fontSize: 16 },
+
+                        listView:{
+                            position: 'absolute',
+                            top: 98.5,
+                            width: 300,
+                            right: 5
+                        },
+
+                        separator: styleDes.seperator
+
                     }}
                 />
 
-            </View>
+            
 
             <Feather name="navigation" size={24} color="#374249" style={styleDes.iconArrow} />
             <Feather name="map-pin" size={24} color="#374249" style={styleDes.icon} />
@@ -73,9 +93,7 @@ const DestinationSearch = () => {
             </TouchableOpacity>
         </View>
 
-        <Feather name="search" size={24} color="#374249" style={styleDes.iconSearch} />
-        <Feather name="search" size={24} color="#374249" style={styleDes.iconSearch} />
-        <Feather name="search" size={24} color="#374249" style={styleDes.iconSearch} />
+        
     </View>
 
         
