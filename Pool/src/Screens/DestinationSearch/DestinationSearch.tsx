@@ -73,7 +73,7 @@ const DestinationSearch = () => {
 
                         listView:{
                             position: 'absolute',
-                            top: 98.5,
+                            top: 90,
                             width: 300,
                             right: 5
                         },
@@ -81,9 +81,16 @@ const DestinationSearch = () => {
                         separator: styleDes.seperator
 
                     }}
+
+                    renderRow={(data: GooglePlaceData) => <PlaceRow data={data} />}
                 />
 
             
+                
+                        
+                <View style={styleDes.line}/>
+
+                
 
             <Feather name="navigation" size={24} color="#374249" style={styleDes.iconArrow} />
             <Feather name="map-pin" size={24} color="#374249" style={styleDes.icon} />

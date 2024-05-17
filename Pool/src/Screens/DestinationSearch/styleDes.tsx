@@ -31,7 +31,10 @@ Container:{
 divider: {
     borderBottomWidth: 1,
     borderBottomColor: '#696969',
-    marginVertical: 10,
+    marginVertical: 15,
+    width: 270,
+    left: 25,
+    top: 10
     
 },
 
@@ -56,6 +59,7 @@ icon:{
 seperator:{
     backgroundColor: '#7B18E3',
     height: 1,
+    
 },
 
 iconSearch:{
@@ -69,7 +73,7 @@ top: 4
 row:{
 flexDirection: 'row',
 alignItems: 'center',
-marginVertical: 10,
+marginVertical: -15,
 },
 
 iconContainer:{
@@ -83,6 +87,17 @@ iconContainer:{
 locationText:{
 
 },
+
+
+line:{
+    width: 1,
+    height: 50,
+    backgroundColor: '#7B18E3',
+    top: 45,
+    left: 30,
+    position: 'absolute'
+},
+
 
 
 
