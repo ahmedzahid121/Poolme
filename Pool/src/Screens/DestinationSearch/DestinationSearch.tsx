@@ -5,11 +5,17 @@ import { useState } from 'react'
 import { Feather } from '@expo/vector-icons'
 import { GooglePlaceData, GooglePlaceDetail, GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 import PlaceRow from './placeRow'
-import { useNavigation } from 'expo-router'
+import { useNavigation } from '@react-navigation/native'
 import ResultSearch from '../Result/resultSearch'
+import { NavigationProp } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
 
 const DestinationSearch = () => {
 
+    type RootStackParamList = {
+        ResultSearch: { origin: string; destination: string };
+      };
+      
     const [destination, setDestination] = useState('');
     const [origin, setOrigin] = useState('');
 
@@ -25,21 +31,20 @@ const DestinationSearch = () => {
         onSearch(destination);
     };
 
-    const navigation = useNavigation();
+    const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
 const checkNavigation = () => {
   if (origin && destination) {
     navigation.navigate('ResultSearch', {
       origin,
       destination,
-    } as { origin: string; destination: string });
+    });
   }
 };
 
 useEffect(() => {
   checkNavigation();
 }, [origin, destination]);
-    
 
 
     return (
