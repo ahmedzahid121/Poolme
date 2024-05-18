@@ -6,25 +6,17 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { ScrollView } from 'react-native-gesture-handler';
 import HomeScreen from '@/src/Screens/HomeScreen/Home';
+import Root from '@/src/Navigation/Root';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 
-export default function app() {
-  
+const App = () => {
   return (
-    
-    <>
-      <HomeScreen/>
-    </>
-   
-   
-    
+    <NavigationContainer>
+      <Root />
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
- 
- 
-  
-});
-
+export default App;
