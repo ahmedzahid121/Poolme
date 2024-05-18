@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity,  } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity,Pressable } from 'react-native'
 import { Feather } from '@expo/vector-icons'
 import "@fontsource/maven-pro";
 import styleSearch from './styleSearch';
@@ -23,12 +23,15 @@ const HomeSearch = () => {
     };
 
 
+
+
+
   return (
     <View style={styleSearch.SearchContainer}>
          {searchActive ? (
                 <DestinationSearch onSearch={handleDestinationSearch} onCancel={handleCancelSearch} />
             ) : (
-                    <>
+                    <>  
                         <TouchableOpacity onPress={handleSearhToggle} style={styleSearch.inputButton}>
                             <Feather name="search" size={24} color="#ffffff" style={styleSearch.icon} />
                             <Text style={styleSearch.inputText}>Search</Text>

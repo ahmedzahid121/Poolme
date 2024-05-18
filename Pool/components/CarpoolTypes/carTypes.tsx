@@ -7,7 +7,11 @@ const carTypes = () => {
   return (
     
     <View >
-         <CarpoolRow/> 
+
+      
+      
+      <CarpoolRow/>
+          
          
          
 

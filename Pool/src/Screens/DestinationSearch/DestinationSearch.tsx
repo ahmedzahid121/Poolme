@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { View, TextInput, Text, TouchableOpacity } from 'react-native'
 import styleDes from './styleDes'
 import { useState } from 'react'
 import { Feather } from '@expo/vector-icons'
 import { GooglePlaceData, GooglePlaceDetail, GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 import PlaceRow from './placeRow'
+import { useNavigation } from 'expo-router'
+import ResultSearch from '../Result/resultSearch'
 
 const DestinationSearch = () => {
 
@@ -21,7 +23,23 @@ const DestinationSearch = () => {
 
     const handleSearch = () => {
         onSearch(destination);
-    }
+    };
+
+    const navigation = useNavigation();
+
+const checkNavigation = () => {
+  if (origin && destination) {
+    navigation.navigate('ResultSearch', {
+      origin,
+      destination,
+    } as { origin: string; destination: string });
+  }
+};
+
+useEffect(() => {
+  checkNavigation();
+}, [origin, destination]);
+    
 
 
     return (

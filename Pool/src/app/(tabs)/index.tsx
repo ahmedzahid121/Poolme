@@ -7,15 +7,14 @@ import { ThemedView } from '@/components/ThemedView';
 import { ScrollView } from 'react-native-gesture-handler';
 import HomeScreen from '@/src/Screens/HomeScreen/Home';
 import Root from '@/src/Navigation/Root';
-import { NavigationContainer } from '@react-navigation/native';
+
+
 
 
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Root />
-    </NavigationContainer>
+      <Root /> // No need for NavigationContainer here
   );
 };
 

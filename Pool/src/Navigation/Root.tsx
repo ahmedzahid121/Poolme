@@ -1,26 +1,24 @@
 import React from 'react'
 import { View, Text} from 'react-native'
-import { NavigationContainer } from '@react-navigation/native'
 import HomeScreen from '../Screens/HomeScreen/Home'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import DestinationSearch from '../Screens/DestinationSearch/DestinationSearch'
-import resultSearch from '../Screens/Result/resultSearch'
+import ResultSearch from '../Screens/Result/resultSearch'
+import { createStackNavigator } from '@react-navigation/stack'
+import { NavigationContainer } from '@react-navigation/native'
 
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 const Root = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-     
-      
-      >
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="DestinationSearch" component={DestinationSearch} />
-        <Stack.Screen name="ResultSreach" component={resultSearch} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    
+        <Stack.Navigator>
+            <Stack.Screen name="Home" component={HomeScreen} />
+            <Stack.Screen name="DestinationSearch" component={DestinationSearch} />
+            <Stack.Screen name="ResultSearch" component={ResultSearch} />
+        </Stack.Navigator>
+    
   );
 };
 
