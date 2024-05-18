@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet, Dimensions} from 'react-native'
 import Map from '@/components/HomeMap/Map'
 import HomeSearch from '@/components/HomeSearch/HomeSearch'
+import Footer from '@/src/FooterScreen/Footer'
 
 const HomeScreen = () => {
   return (
@@ -13,7 +14,13 @@ const HomeScreen = () => {
       <View >
         <HomeSearch/>
       </View>
+
+      <View>
+        <Footer/>
+      </View>
     </View>
+
+
   )
 }
 

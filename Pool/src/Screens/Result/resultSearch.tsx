@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View, Dimensions } from 'react-native';
-import RouteMap from '@/assets/RouteMap/RouteMap';
+import RouteMap from '@/components/RouteMap/RouteMap';
 import CarTypes from '@/components/CarpoolTypes/carTypes';
 import { useRoute } from '@react-navigation/native';
 

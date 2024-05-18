@@ -1,11 +1,9 @@
 import React from 'react'
 import { View, Text} from 'react-native'
-import HomeScreen from '../Screens/HomeScreen/Home'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import DestinationSearch from '../Screens/DestinationSearch/DestinationSearch'
-import ResultSearch from '../Screens/Result/resultSearch'
 import { createStackNavigator } from '@react-navigation/stack'
 import { NavigationContainer } from '@react-navigation/native'
+import HomeRoot from './HomeRoot'
 
 
 const Stack = createStackNavigator();
@@ -13,13 +11,16 @@ const Stack = createStackNavigator();
 const Root = () => {
   return (
     
-        <Stack.Navigator>
-            <Stack.Screen name="Home" component={HomeScreen} />
-            <Stack.Screen name="DestinationSearch" component={DestinationSearch} />
-            <Stack.Screen name="ResultSearch" component={ResultSearch} />
-        </Stack.Navigator>
-    
+        <NavigationContainer>
+
+            <HomeRoot/>
+            
+        </NavigationContainer>
+
   );
 };
 
 export default Root;
+
+
+// add the Drawer navigator in here and try to create Footer on the screen with the Settings Screen. 
