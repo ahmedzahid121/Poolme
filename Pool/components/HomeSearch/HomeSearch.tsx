@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TouchableOpacity,Pressable } from 'react-native
 import { Feather } from '@expo/vector-icons'
 import "@fontsource/maven-pro";
 import styleSearch from './styleSearch';
-import DestinationSearch from '@/src/Screens/DestinationSearch/DestinationSearch';
+import DestinationSearch from '@/src/DestinationSearch/DestinationSearch';
 
 const HomeSearch = () => {
 

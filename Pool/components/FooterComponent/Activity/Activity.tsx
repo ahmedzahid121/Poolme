@@ -1,8 +1,13 @@
 import React from 'react'
+import { View, Text } from 'react-native'
 
 const Activity = () => {
   return (
-    <div>Activity</div>
+
+    <View>
+        <Text>Activity</Text>
+    </View>
+    
   )
 }
 

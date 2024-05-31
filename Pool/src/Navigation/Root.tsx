@@ -11,11 +11,11 @@ const Stack = createStackNavigator();
 const Root = () => {
   return (
     
-        <NavigationContainer>
+       
 
             <HomeRoot/>
             
-        </NavigationContainer>
+       
 
   );
 };

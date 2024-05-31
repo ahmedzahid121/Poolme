@@ -2,7 +2,7 @@ import Activity from '@/components/FooterComponent/Activity/Activity'
 import Notification from '@/components/FooterComponent/Notification/Notification'
 import Settings from '@/components/FooterComponent/Settings/Settings'
 import React from 'react'
-import { View, Text } from 'react-native-reanimated/lib/typescript/Animated'
+import { View, Text } from 'react-native'
 import HomeScreen from '../Screens/HomeScreen/Home'
 import HomeFoot from '@/components/FooterComponent/Home/HomeFoot'
 import styleFoot from './styleFoot'
@@ -10,10 +10,23 @@ import styleFoot from './styleFoot'
 const Footer = () => {
     return (
       <View style = {styleFoot.FooterContainer}>
-        <HomeFoot style = {styleFoot.FooterHome}/>
-        <Activity style = {styleFoot.FooterActivity} />
-        <Notification style = {styleFoot.FooterNotification} />
-        <Settings  style = {styleFoot.FooterSetting}/>
+
+        <View style = {styleFoot.FooterHome}>
+        <HomeFoot />
+        </View>
+        
+        <View style = {styleFoot.FooterActivity}>
+        <Activity  />
+        </View>
+        
+        <View style = {styleFoot.FooterNotification}> 
+        <Notification  />
+        </View>
+        
+        <View style = {styleFoot.FooterSetting}>
+        <Settings  />
+        </View>
+        
         
       </View>
     )

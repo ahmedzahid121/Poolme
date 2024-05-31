@@ -1,9 +1,13 @@
 import React from 'react'
+import { View, Text } from 'react-native'
 
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+    <View>
+        <Text>Settings</Text>
+    </View>
+    
   )
 }
 

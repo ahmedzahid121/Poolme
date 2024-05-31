@@ -15,7 +15,7 @@ const HomeScreen = () => {
         <HomeSearch/>
       </View>
 
-      <View>
+      <View >
         <Footer/>
       </View>
     </View>

@@ -6,7 +6,7 @@ import { Feather } from '@expo/vector-icons'
 import { GooglePlaceData, GooglePlaceDetail, GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 import PlaceRow from './placeRow'
 import { useNavigation } from '@react-navigation/native'
-import ResultSearch from '../Result/resultSearch'
+import ResultSearch from '../Screens/Result/resultSearch'
 import { NavigationProp } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
